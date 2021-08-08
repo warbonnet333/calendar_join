@@ -1,0 +1,35 @@
+.day_item {
+    transition: all 0.3s ease;
+}
+
+.day_item:hover {
+    background: lightskyblue;
+}
+
+.calendar {
+    padding: 5vh 5vw;
+    /*overflow: hidden;*/
+}
+
+.rbc-btn-group {
+    box-shadow: 1px 1px 4px lightskyblue;
+    border-radius: 4px;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button:focus{
+    color: #fff;
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active{
+    color: #fff;
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
+
+.rbc-toolbar button:active:hover, .rbc-toolbar button:active:focus, .rbc-toolbar button.rbc-active:hover, .rbc-toolbar button.rbc-active:focus{
+    color: #fff;
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
