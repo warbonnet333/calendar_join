@@ -152,33 +152,33 @@ const EventEditor = props => {
             <form onSubmit={onSubmitForm}>
                 <button onClick={onCloseEditor} type='button' className='close_btn'></button>
                 <div className='input_wrapper'>
-                    <label htmlFor="eventName">Title</label>
+                    <label htmlFor="eventName">event name</label>
                     <input id="eventName" type="text" name="eventName"
                            placeholder="eventName" value={eventName} onChange={onHandlerChande}/>
                     {fieldsErrors['eventName'] && isErrorShown &&
                     <span className='error_span'>{fieldsErrors['eventName']}</span>}
                 </div>
                 <div className='input_wrapper'>
-                    <label htmlFor="eventDate">Date</label>
+                    <label htmlFor="eventDate">event date</label>
                     <input id="eventDate" type="date" name="eventDate"
                            placeholder="eventDate" value={eventDate} onChange={onHandlerChande}/>
                     {fieldsErrors['eventDate'] && isErrorShown &&
                     <span className='error_span'>{fieldsErrors['eventDate']}</span>}
                 </div>
                 <div className='input_wrapper'>
-                    <label htmlFor="eventTime">Time</label>
+                    <label htmlFor="eventTime">event time</label>
                     <input id="eventTime" type="time" name="eventTime"
                            placeholder="eventTime" value={eventTime} onChange={onHandlerChande}/>
                     {fieldsErrors['eventTime'] && isErrorShown &&
                     <span className='error_span'>{fieldsErrors['eventTime']}</span>}
                 </div>
                 <div className='input_wrapper'>
-                    <label htmlFor="notes">Notes</label>
+                    <label htmlFor="notes">event notes</label>
                     <input id="notes" type="text" name="notes"
                            placeholder="notes" value={notes} onChange={onHandlerChande}/>
                 </div>
                 <div className='input_wrapper'>
-                    <label htmlFor="color">Color</label>
+                    <label htmlFor="color">event color</label>
                     <select name="color" id="color" value={color} onChange={onHandlerChande}>
                         <option value="blue">Blue</option>
                         <option value="red">Red</option>
