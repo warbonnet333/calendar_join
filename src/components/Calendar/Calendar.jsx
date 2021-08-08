@@ -16,12 +16,11 @@ const MyCalendar = props => {
     const [selectedSlot, setSelectedSlot] = useState(initialSelectedSlot);
 
     const onCalendarClick = (e, sec) => {
-        if(props.isEditorOpened){
+        if (props.isEditorOpened) {
             props.closeEditor();
             return;
         }
-
-
+        props.closeEditor();
 
         setSelectedSlot({
             bounds: {
@@ -35,6 +34,10 @@ const MyCalendar = props => {
     }
 
     const onEventClick = (e, eSec) => {
+        if (props.isEditorOpened) {
+            props.closeEditor();
+            return;
+        }
         props.closeEditor();
 
         setSelectedSlot({
@@ -67,7 +70,7 @@ const MyCalendar = props => {
         return {
             style: {
                 backgroundColor: event.color,
-                color:'#fff',
+                color: '#fff',
                 padding: '8px 12px'
             }
         }
