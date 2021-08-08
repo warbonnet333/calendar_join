@@ -38,6 +38,7 @@ const MyCalendar = props => {
             props.closeEditor();
             return;
         }
+
         props.closeEditor();
 
         setSelectedSlot({
