@@ -2,7 +2,7 @@
   "name": "join-to-it",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://warbonnet333.github.io/calendar_test",
+  "homepage": "https://warbonnet333.github.io/calendar_join",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
